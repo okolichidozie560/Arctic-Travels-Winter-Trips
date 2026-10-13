@@ -1,0 +1,752 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #102a43;
+    background: #f5f9fc;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 78px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: white;
+    position: relative;
+    z-index: 10;
+
+    box-shadow: 0 2px 155px rgba(1, 37, 50, 0.998);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #123b5d;
+}
+
+.logo span {
+    color: #0b91c7;
+}
+
+.logo span:first-child {
+    margin-right: 5px;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+/* #country{
+    width: 200px;
+    height: 30px;
+} */
+
+nav a {
+    color: #34546b;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #087eae;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.login {
+    border: none;
+    background: transparent;
+    color: #173f5f;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+
+.book-small {
+    border: none;
+    background: #087eae;
+    color: white;
+
+    padding: 12px 22px;
+    border-radius: 7px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.book-small:hover {
+    background: #055c82;
+    transform: translateY(-15px);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    height: 610px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 28, 48, 0.78),
+            rgba(4, 28, 48, 0.38),
+            rgba(4, 28, 48, 0.05)
+        ),
+        url(./image/picture.jpg);
+        /* skyblue; */
+      ;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 9%;
+}
+
+.hero-content {
+    color: white;
+    max-width: 650px;
+}
+
+.small-title {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: 1.05;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #183a45;
+}
+
+.hero-text {
+    max-width: 530px;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   CTA BUTTON
+========================= */
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+
+    background: #00a6d6;
+    color: white;
+
+    padding: 17px 28px;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+    font-weight: 800;
+
+    box-shadow: 0 10px 25px rgba(0, 166, 214, 0.3);
+
+    transition: 0.3s;
+}
+
+.cta-button span {
+    font-size: 20px;
+}
+
+.cta-button:hover {
+    background: #0087b0;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   BOOKING BOX
+========================= */
+
+.booking-section {
+    position: relative;
+    margin-top: -50px;
+    padding: 0 8%;
+    z-index: 3;
+}
+
+.booking-box {
+    background: white;
+
+    max-width: 1150px;
+    margin: auto;
+
+    min-height: 105px;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 20px 25px;
+
+    box-shadow: 0 15px 40px rgba(14, 54, 78, 0.16);
+}
+
+.booking-item {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 10px 25px;
+
+    border-right: 1px solid #dce8ef;
+}
+
+.icon {
+    font-size: 25px;
+}
+
+.booking-item small {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #6a8598;
+}
+
+.booking-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.search-button {
+    border: none;
+
+    background: #087eae;
+    color: white;
+
+    padding: 17px 32px;
+
+    border-radius: 7px;
+
+    font-weight: 800;
+    font-size: 14px;
+
+    margin-left: 20px;
+
+    transition: 0.3s;
+}
+
+.search-button:hover {
+    background: #055c82;
+}
+
+
+/* =========================
+   OPTIONS SECTION
+========================= */
+
+.options {
+    padding: 110px 8% 90px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.section-heading p {
+    color: #0782ae;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 800;
+
+    margin-bottom: 13px;
+}
+
+.section-heading h2 {
+    font-size: 35px;
+    line-height: 1.25;
+    color: #123b5d;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(17, 56, 78, 0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 35px rgba(17, 56, 78, 0.15);
+}
+
+.card-image {
+    height: 190px;
+background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.region {
+    background-image:
+        url(./image/region.png);
+}
+
+.lodging {
+    background-image:
+        url(./image/lodging.png);
+}
+
+.resort {
+    background-image:
+        url(./image/resort.png);
+}
+
+.passes {
+    background-image:
+        url(./image/passes.png);
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-icon {
+    font-size: 22px;
+}
+
+.card h3 {
+    margin: 12px 0 10px;
+
+    font-size: 21px;
+
+    color: #123b5d;
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 1.7;
+
+    color: #6a7f8e;
+
+    margin-bottom: 18px;
+}
+
+.card a {
+    color: #0782ae;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   BOTTOM CTA
+========================= */
+/* QUESTION */
+.bottom-cta {
+    margin-top: 75px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            120deg,
+            #0c3d5d,
+            #087eae
+        );
+
+    color: white;
+
+    border-radius: 15px;
+
+    padding: 55px 20px;
+}
+
+.bottom-cta h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.bottom-cta p {
+    font-size: 15px;
+
+    opacity: 0.9;
+
+    margin-bottom: 28px;
+}
+
+.bottom-cta .cta-button {
+    background: white;
+    color: #087eae;
+
+    box-shadow: none;
+}
+
+.bottom-cta .cta-button:hover {
+    background: #eaf8fc;
+}
+
+
+/* =========================
+   WHY ARCTIC
+========================= */
+
+.why-arctic {
+    background: #e9f4f8;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 570px;
+}
+
+.why-image {
+    background:
+        linear-gradient(
+            rgba(3, 38, 61, 0.15),
+            rgba(3, 38, 61, 0.15)
+        ),
+        url(./image/why-image.png);
+
+    background-size: cover;
+    background-position: center;
+}
+
+.why-content {
+    padding: 80px 9%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.why-content .small-title {
+    color: #0782ae;
+}
+
+.why-content h2 {
+    font-size: 43px;
+    line-height: 1.15;
+
+    color: #123b5d;
+
+    margin-bottom: 22px;
+}
+
+.why-content h2 span {
+    color: #0782ae;
+}
+
+.why-content > p {
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: #607887;
+
+    max-width: 550px;
+
+    margin-bottom: 35px;
+}
+
+.features {
+    display: flex;
+
+    gap: 25px;
+}
+
+.features div {
+    flex: 1;
+}
+
+.features strong {
+    color: #0782ae;
+    font-size: 13px;
+}
+
+.features h3 {
+    margin: 8px 0;
+
+    color: #123b5d;
+
+    font-size: 15px;
+}
+
+.features p {
+    color: #6a7f8e;
+
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #082b43;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 800;
+
+    margin-bottom: 12px;
+}
+
+.footer-logo span {
+    color: #8de3ff;
+}
+
+footer > p {
+    color: #b4c9d5;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    color: white;
+
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: #8de3ff;
+}
+
+footer .copyright {
+    color: #7e9aaa;
+
+    font-size: 11px;
+
+    margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .booking-box {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .booking-item {
+        min-width: 45%;
+    }
+
+    .search-button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .hero {
+        height: 580px;
+        padding: 0 7%;
+
+        background-position: 65% center;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .booking-section {
+        padding: 0 5%;
+        margin-top: -35px;
+    }
+
+    .booking-box {
+        display: block;
+        padding: 20px;
+    }
+
+    .booking-item {
+        border-right: none;
+        border-bottom: 1px solid #dce8ef;
+
+        padding: 15px 5px;
+    }
+
+    .search-button {
+        margin-top: 15px;
+    }
+
+    .options {
+        padding: 80px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card-image {
+        height: 220px;
+    }
+
+    .why-arctic {
+        grid-template-columns: 1fr;
+    }
+
+    .why-image {
+        min-height: 400px;
+    }
+
+    .why-content {
+        padding: 60px 7%;
+    }
+
+    .why-content h2 {
+        font-size: 34px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bottom-cta {
+        padding: 45px 20px;
+    }
+
+    .bottom-cta h2 {
+        font-size: 26px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+}
